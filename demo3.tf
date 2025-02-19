@@ -7,7 +7,7 @@ terraform {
   }
 }
 provider "spacelift" {
-  api_token = context.SPACELIFT_API_TOKEN
+  api_token = env.SPACELIFT_API_TOKEN
 }
 
 resource "spacelift_worker_pool" "example" {
