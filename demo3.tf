@@ -7,8 +7,7 @@ terraform {
   }
 }
 provider "spacelift" {
-
-  token ="YXBpOjAxSk1FUjZENkNaMlcyUTdWN1FEUlNLOUcwOmM1ZTdlYmY3YzEzNDQ2YzAzMjc4MDc1MjY3OGFjMjJlMTZmZDE5ZTQzODU0MjI5NWQ4N2U4MjBlMzEyZTRhOTA"
+  api_token = context.SPACELIFT_API_TOKEN
 }
 
 resource "spacelift_worker_pool" "example" {
