@@ -1,4 +1,11 @@
-
+terraform {
+  required_providers {
+    spacelift = {
+      source  = "Spacelift-io/spacelift"
+      version = ">= 0.1.0"
+    }
+  }
+}
 provider "spacelift" {
 
   token ="YXBpOjAxSk1FUjZENkNaMlcyUTdWN1FEUlNLOUcwOmM1ZTdlYmY3YzEzNDQ2YzAzMjc4MDc1MjY3OGFjMjJlMTZmZDE5ZTQzODU0MjI5NWQ4N2U4MjBlMzEyZTRhOTA"
